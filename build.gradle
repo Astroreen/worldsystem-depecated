@@ -177,13 +177,13 @@ dependencies {
     compileOnly lombok()
     annotationProcessor lombok()
 
-    implementation spigot('1.17')
+    implementation spigot('1.18')
 
     //Add dependencies here
     //Test dependencies
     testImplementation 'org.junit.jupiter:junit-jupiter:5.+'
     testImplementation "org.mockito:mockito-core:3.+"
-    testImplementation mockBukkit()
+    //testImplementation mockBukkit()
     testImplementation 'org.assertj:assertj-core:3.+'
     testImplementation lombok()
     testAnnotationProcessor lombok()
@@ -196,8 +196,8 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.18.22'
     compileOnly 'com.sk89q.worldedit:worldedit-bukkit:7.2.0-SNAPSHOT'
     compileOnly 'com.sk89q.worldedit:worldedit-core:7.2.0-SNAPSHOT'
-    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit:1.17-420")
-    compileOnly("com.fastasyncworldedit:FastAsyncWorldEdit-Core:1.17-420")
+    compileOnly('com.fastasyncworldedit:FastAsyncWorldEdit-Core:2.1.0')
+    compileOnly('com.fastasyncworldedit:FastAsyncWorldEdit-Bukkit:2.1.1') //{ isTransitive = false }
     compileOnly files('lib/FastAsyncWorldEdit.jar')
 }
 
